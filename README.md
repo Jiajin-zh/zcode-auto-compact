@@ -35,9 +35,11 @@
 
 **前提**：ZCode 桌面版 + Python 3.8+（Windows 官方安装包即含 tkinter；`python3` / `python` / `py -3` 任一可用）。
 
-**方式 A · Git URL（推荐，支持自动更新）**
+**方式 A · Git 仓库（推荐，支持自动更新）**
 
-1. ZCode → 插件市场 → 添加 → **添加插件市场** → 填本仓库地址 → 添加
+1. ZCode → 插件市场 → 添加 → **添加插件市场**，填以下任一地址 → 添加
+   - `1473166814/zcode-auto-compact`（走 HTTPS）
+   - `git@github.com:1473166814/zcode-auto-compact.git`（**HTTPS 被网络重置时用这个**，需本机有可用的 GitHub SSH key）
 2. 个人 → 对应市场 → 「自动上下文压缩」→ 安装
 3. **完全退出并重开 ZCode**（托盘退出，关窗不算；首次必须，之后改阈值免重启）
 4. 悬停输入框旁的上下文指示器 → 弹窗顶部即滑块
