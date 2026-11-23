@@ -1,0 +1,26 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "shell": true,
+            "command": "python3 \"${ZCODE_PLUGIN_ROOT}/hooks/autocompact.py\" self-update || python \"${ZCODE_PLUGIN_ROOT}/hooks/autocompact.py\" self-update || py -3 \"${ZCODE_PLUGIN_ROOT}/hooks/autocompact.py\" self-update",
+            "timeoutMs": 45000,
+            "statusMessage": "zcode-auto-compact: 检查插件更新…",
+            "onError": "allow"
+          },
+          {
+            "type": "command",
+            "shell": true,
+            "command": "python3 \"${ZCODE_PLUGIN_ROOT}/hooks/autocompact.py\" patch || python \"${ZCODE_PLUGIN_ROOT}/hooks/autocompact.py\" patch || py -3 \"${ZCODE_PLUGIN_ROOT}/hooks/autocompact.py\" patch",
+            "timeoutMs": 20000,
+            "statusMessage": "zcode-auto-compact: 确保自动压缩阈值补丁在位…",
+            "onError": "allow"
+          }
+        ]
+      }
+    ]
+  }
+}

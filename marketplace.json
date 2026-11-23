@@ -1,0 +1,19 @@
+{
+  "name": "zcode-auto-compact",
+  "plugins": [
+    {
+      "name": "zcode-auto-compact",
+      "source": "./zcode-auto-compact",
+      "version": "1.0.4",
+      "description": "Makes ZCode's built-in auto-compact trigger at a configurable percentage of the model's context window (default 70%). A reversible patch to one engine function plus a threshold slider injected into the context-usage popup (one-line app.asar entry, reversible); nothing is injected into the model context. Settings dialog (/compact-settings), engine/asar restore and self-update via the official zcode CLI.",
+      "displayName": "ZCode Auto Compact",
+      "displayName_i18n": {
+        "zh-CN": "自动上下文压缩"
+      },
+      "description_i18n": {
+        "zh-CN": "自动上下文压缩：让 ZCode 自带的自动压缩按设定的百分比触发（默认为模型上下文窗口的 70%）。给引擎的一个函数打可还原补丁，并在上下文容量弹窗里注入阈值滑块（app.asar 入口一行、可还原）；不往模型上下文注入文字。带设置弹窗（/compact-settings）、引擎/asar 还原与自动更新。"
+      },
+      "category": "productivity"
+    }
+  ]
+}
