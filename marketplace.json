@@ -4,7 +4,7 @@
     {
       "name": "zcode-auto-compact",
       "source": "./zcode-auto-compact",
-      "version": "1.0.4",
+      "version": "1.0.5",
       "description": "Makes ZCode's built-in auto-compact trigger at a configurable percentage of the model's context window (default 70%). A reversible patch to one engine function plus a threshold slider injected into the context-usage popup (one-line app.asar entry, reversible); nothing is injected into the model context. Settings dialog (/compact-settings), engine/asar restore and self-update via the official zcode CLI.",
       "displayName": "ZCode Auto Compact",
       "displayName_i18n": {

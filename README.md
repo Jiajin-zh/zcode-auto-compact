@@ -38,15 +38,15 @@
 **方式 A · Git 仓库（推荐，支持自动更新）**
 
 1. ZCode → 插件市场 → 添加 → **添加插件市场**，填以下任一地址 → 添加
-   - `1473166814/zcode-auto-compact`（走 HTTPS）
-   - `git@github.com:1473166814/zcode-auto-compact.git`（**HTTPS 被网络重置时用这个**，需本机有可用的 GitHub SSH key）
+   - `Jiajin-zh/zcode-auto-compact`（走 HTTPS）
+   - `git@github.com:Jiajin-zh/zcode-auto-compact.git`（**HTTPS 被网络重置时用这个**，需本机有可用的 GitHub SSH key）
 2. 个人 → 对应市场 → 「自动上下文压缩」→ 安装
 3. **完全退出并重开 ZCode**（托盘退出，关窗不算；首次必须，之后改阈值免重启）
 4. 悬停输入框旁的上下文指示器 → 弹窗顶部即滑块
 
 **方式 B · zip（内网/离线）**：从 [dist/](dist/) 下载 zip 解压到**固定目录**，把该目录作为本地插件市场添加，其余同上。
 
-**发给别人**：把 `1473166814/zcode-auto-compact` 发给对方，对方在 插件市场 → 添加 → 添加插件市场 里粘贴即可（公开仓库，不需要给任何 key）；对方网络到不了 GitHub 时，把 `dist/zcode-auto-compact-v1.0.4.zip` 发过去，解压到固定目录，把该目录作为本地插件市场添加。对方需要 Python 3.8+。
+**发给别人**：把 `Jiajin-zh/zcode-auto-compact` 发给对方，对方在 插件市场 → 添加 → 添加插件市场 里粘贴即可（公开仓库，不需要给任何 key）；对方网络到不了 GitHub 时，把 `dist/zcode-auto-compact-v1.0.5.zip` 发过去，解压到固定目录，把该目录作为本地插件市场添加。对方需要 Python 3.8+。
 
 ## 配置
 
