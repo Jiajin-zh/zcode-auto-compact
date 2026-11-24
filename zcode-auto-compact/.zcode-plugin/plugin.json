@@ -1,9 +1,9 @@
 {
   "name": "zcode-auto-compact",
-  "version": "1.0.5",
-  "description": "Makes ZCode's built-in auto-compact trigger at a configurable percentage of the model's context window (default 70%) instead of the engine default. Implemented as a reversible patch to the single getAutoCompactThreshold function in resources/glm/zcode.cjs; nothing else in the engine is touched and no text is injected into the model context. Includes a settings dialog (/compact-settings), engine restore, and self-update through the official zcode CLI.",
+  "version": "1.0.6",
+  "description": "Makes ZCode's built-in auto-compact trigger at a configurable percentage of the model's context window (default 35%) instead of the engine default. Implemented as a reversible patch to the single getAutoCompactThreshold function in resources/glm/zcode.cjs; nothing else in the engine is touched and no text is injected into the model context. Includes a settings dialog (/compact-settings), engine restore, and self-update through the official zcode CLI.",
   "description_i18n": {
-    "zh-CN": "让 ZCode 自带的自动压缩按设定的百分比触发（默认为模型上下文窗口的 70%），而不是引擎默认的高阈值。实现为引擎 resources/glm/zcode.cjs 中 getAutoCompactThreshold 一个函数的可还原补丁，不改引擎其它内容，也不往模型上下文注入任何文字。带设置弹窗（/compact-settings）、引擎还原，以及经官方 zcode CLI 的自动更新。"
+    "zh-CN": "让 ZCode 自带的自动压缩按设定的百分比触发（默认为模型上下文窗口的 35%），而不是引擎默认的高阈值。实现为引擎 resources/glm/zcode.cjs 中 getAutoCompactThreshold 一个函数的可还原补丁，不改引擎其它内容，也不往模型上下文注入任何文字。带设置弹窗（/compact-settings）、引擎还原，以及经官方 zcode CLI 的自动更新。"
   },
   "author": {
     "name": "Jiajin-zh"

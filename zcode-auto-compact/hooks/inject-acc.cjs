@@ -19,8 +19,8 @@
   function readPercent() {
     try {
       var c = JSON.parse(fs.readFileSync(CFG, "utf8")).autoCompactPercent;
-      return (typeof c === "number" && c >= 10 && c <= 95) ? Math.floor(c) : 70;
-    } catch (e) { return 70; }
+      return (typeof c === "number" && c >= 10 && c <= 95) ? Math.floor(c) : 35;
+    } catch (e) { return 35; }
   }
   function writePercent(p) {
     p = Math.max(10, Math.min(95, Math.floor(Number(p) || 0)));

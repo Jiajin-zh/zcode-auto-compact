@@ -5,10 +5,10 @@
 <!-- TODO: 补一张最终版弹窗截图到 docs/ 并取消注释：<p><img src="docs/popup.png" width="360"/></p> -->
 
 ```
-自动压缩阈值 = 模型上下文窗口 × 百分比（默认 70%），且不会晚于 ZCode 原生阈值
+自动压缩阈值 = 模型上下文窗口 × 百分比（默认 35%），且不会晚于 ZCode 原生阈值
 ```
 
-例如 1M 窗口设 35%：用量到约 350K tokens 时 ZCode 自动压缩；原生默认要到 ~90% 以上才压。
+默认 35%：1M 窗口用到约 350K tokens 时自动压缩；原生默认要到 ~90% 以上才压。
 
 ## 功能一览
 
@@ -52,7 +52,7 @@
 
 | 键 | 默认 | 说明 |
 | --- | --- | --- |
-| `autoCompactPercent` | `70` | 达到模型上下文窗口的该百分比时自动压缩（10–95） |
+| `autoCompactPercent` | `35` | 达到模型上下文窗口的该百分比时自动压缩（10–95） |
 | `patchEnabled` | `true` | 引擎补丁开关（`restore-engine` 会置 `false`） |
 | `asarInject` | `true` | 弹窗滑块注入开关（`restore-asar` 会置 `false`） |
 | `autoUpdate` | `true` | 自动更新开关 |

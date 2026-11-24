@@ -11,7 +11,7 @@
 用法：
     autocompact.py patch                  SessionStart：确保引擎补丁在位（ZCode 升级后自动重打）
     autocompact.py self-update [--force]  SessionStart：经宿主官方 CLI 检查并安装插件更新
-    autocompact.py config [选项]          查看/修改设置（--percent 70 …），修改后同步补丁
+    autocompact.py config [选项]          查看/修改设置（--percent 35 …），修改后同步补丁
     autocompact.py settings               打开设置弹窗
     autocompact.py restore-engine         把引擎函数还原为原文，并停止自动打补丁
 
@@ -50,7 +50,7 @@ PLUGINS_DIR = HOME / ".zcode" / "cli" / "plugins"
 ZCODE_CJS = Path("resources") / "glm" / "zcode.cjs"
 
 DEFAULTS = {
-    "autoCompactPercent": 70,         # 用量达到模型上下文窗口的该百分比时自动压缩
+    "autoCompactPercent": 35,         # 用量达到模型上下文窗口的该百分比时自动压缩
     "patchEnabled": True,             # False：不打补丁（「还原引擎」会置为 False）
     "asarInject": True,               # False：不往 app.asar 注入弹窗滑块（「还原 asar」会置为 False）
     "autoUpdate": True,               # 新会话启动时自动检查并安装插件更新

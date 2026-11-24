@@ -8,7 +8,7 @@
   if (window.__accVer === VER) return;
   if (window.__accCleanup) { try { window.__accCleanup(); } catch (e) { } }
   window.__accVer = VER;
-  var P = 70;
+  var P = 35;
   var HC = '[data-slot="hover-card-content"]';
   var ROW = "acc-ac-sec";
   var MIN = 10, MAX = 95;

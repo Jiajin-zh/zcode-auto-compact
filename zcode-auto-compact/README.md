@@ -3,7 +3,7 @@
 让 ZCode **自带的自动压缩**按你设定的百分比触发，并且**在上下文弹窗里直接调**——拖完滑块即时生效，全部会话生效，不经过模型。
 
 ```
-自动压缩阈值 = 模型上下文窗口 × 百分比（默认 70%），且不会晚于 ZCode 原生阈值
+自动压缩阈值 = 模型上下文窗口 × 百分比（默认 35%），且不会晚于 ZCode 原生阈值
 ```
 
 ## 设置入口（三选一）
@@ -35,7 +35,7 @@ python hooks/autocompact.py self-update --force
 
 | 键 | 默认 | 说明 |
 | --- | --- | --- |
-| `autoCompactPercent` | `70` | 用量达到模型上下文窗口的该百分比时自动压缩（10–95） |
+| `autoCompactPercent` | `35` | 用量达到模型上下文窗口的该百分比时自动压缩（10–95） |
 | `patchEnabled` | `true` | 引擎补丁开关（`restore-engine` 置 `false`） |
 | `asarInject` | `true` | 弹窗滑块注入开关（`restore-asar` 置 `false`） |
 | `autoUpdate` | `true` | 新会话启动时自动检查并安装插件更新（经官方 CLI） |

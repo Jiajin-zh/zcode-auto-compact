@@ -1,5 +1,5 @@
 {
-  "autoCompactPercent": 70,
+  "autoCompactPercent": 35,
   "patchEnabled": true,
   "autoUpdate": true,
   "autoUpdateIntervalMinutes": 60
